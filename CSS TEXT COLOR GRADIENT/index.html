@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TEXT COLOR GRAIENT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+        *,
+        ::after,
+        ::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            place-content: center;
+            height: 100vh;
+            background-color: #080202;
+        }
+
+        .text {
+            font-size: 10rem;
+            font-family: 'Roboto Slab', serif;
+            letter-spacing: 10px;
+            background-image: linear-gradient(to top, lime, yellow);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text">SADI</h1>
+    </div>
+</body>
+</html>
